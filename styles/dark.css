@@ -1,29 +1,20 @@
-.page.theme_dark {
-  --main-text-color: #f1b2ce;
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-dark {
   --bg-color: #000028;
-  --main-header-color: #db00ff;
-  --button-color: #ff0070;
-  --button-hover-border: #ff007066;
-  --section-header-color: #ff0070;
-  --article-header-color: #000028;
-  --article-bg-color: #ff0070;
-  --link-shadow-color: #ff0070;
-  --bg-image: url("../images/cover-image-dark.png");
-  --visible: visible;
+  --bg-image: url('../images/cover-image-dark.png');
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --contrast-color: #ff0070;
+  --decor-text-color: #000028;
+  --button-hover-color: #ff007066;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --main-text-color: #f1b2ce;
-    --bg-color: #000028;
-    --main-header-color: #db00ff;
-    --button-color: #ff0070;
-    --button-hover-border: #ff007066;
-    --section-header-color: #ff0070;
-    --article-header-color: #000028;
-    --article-bg-color: #ff0070;
-    --link-shadow-color: #ff0070;
-    --bg-image: url("../images/cover-image-dark.png");
-    --visible: visible;
-  }
+.theme-dark .header__rec {
+  display: flex;
 }
